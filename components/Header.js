@@ -8,8 +8,8 @@ const Header = ({logo}) =>{
             <nav>
                 <ul>
                     {
-                        menus.map(menu=>(
-                            <li>{menu}</li>
+                        menus.map((menu,index)=>(
+                            <li key={index}>{menu}</li>
                         ))
                     }
                 </ul>
